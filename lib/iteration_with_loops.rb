@@ -4,7 +4,7 @@ def join_nested_strings(src)
   resultString = ""
   for row in src
     for element in row
-      resultString += element if element.is_a?( String )
+      resultString = resultString + element + " " if element.is_a?( String )
     end
   end
   resultString
